@@ -1,0 +1,7 @@
+*.log
+*.log.mbtree
+videos/*.mp4
+*.avi
+
+.RData
+.RHistory
