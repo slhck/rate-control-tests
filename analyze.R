@@ -110,7 +110,7 @@ ggsave("quality_modes.png", width = 8, height = 10, dpi = 100)
 
 d.crf_vbv %>%
   filter(param %in% c("17", "23")) %>%
-  filter(target_bitrate %in% c(3000, 7500)) %>%
+  #filter(target_bitrate %in% c(3000, 7500)) %>%
   ggplot(aes(x = frame_index, y = size, color = as.factor(target_bitrate))) +
   geom_smooth(method = "loess", se = FALSE) +
   scale_color_discrete("Target / VBV Maximum Bitrate") +
